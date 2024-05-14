@@ -10,4 +10,4 @@ for i in range(len(precos)):
         maior = precos[i]
         localMaior=i
 
-print(f'O carro mais caro é o {carros[localMaior]} e custa {precos[localMaior]} e foi fabricado em no ano{ano[localMaior]}')
+print(f'O mais caro é o {carros[localMaior]} e custa {precos[localMaior]} e foi fabricado em no ano{ano[localMaior]}')
