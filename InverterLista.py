@@ -9,7 +9,6 @@ def inverterLista(lista):
         lista[i] = lista[tamanho- i]
         lista[tamanho - i] = aux
 
-    return lista
 
-
-print(inverterLista(numeros))
+inverterLista(numeros)
+print(numeros)
