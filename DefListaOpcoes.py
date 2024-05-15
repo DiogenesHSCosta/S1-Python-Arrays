@@ -1,16 +1,18 @@
 itensA = ["girafa", "abacaxi", "elefante", "banana", "macaco"]
 itensB = ["bicicleta", "abacate", "leão", "morango", "tigre"]
 
-def selecionarItem(lista):
+def selecionarItem(lista, msg):
     for i in range(len(lista)):
         print(lista[i])
 
-    escolha = input('Escolha um dos itens da lista: ')
+    escolha = input(msg)
+
     while not escolha in lista:
         escolha = input('Escolha um item valido: ')
 
-    print(f'voce escolheu o item {escolha}')
+    print(f'voce escolheu o item {escolha}\n')
+    return escolha
 
 
-selecionarItem(itensA)
-selecionarItem(itensB)
+selecionarItem(itensA, 'Escolha o item da lista A: ')
+selecionarItem(itensB, 'Escolha o item da lista B: ')
